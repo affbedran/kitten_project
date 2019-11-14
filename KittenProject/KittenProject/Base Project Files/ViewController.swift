@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
+    private(set) var disposeBag: DisposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
