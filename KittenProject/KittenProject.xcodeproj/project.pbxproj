@@ -122,14 +122,12 @@
 		5B62FA3E237CC2D500F980ED /* KittenProject */ = {
 			isa = PBXGroup;
 			children = (
-				5B62FA7A237CD46B00F980ED /* StubData */,
-				5B62FA71237CCDE400F980ED /* Network */,
-				5B62FA79237CD45600F980ED /* Delegates */,
-				5B62FA78237CD44300F980ED /* Base Project Files */,
+				5B62FA67237CCB6D00F980ED /* Model */,
+				5B62FA7C237CD5E400F980ED /* View */,
+				5B62FA7B237CD5DD00F980ED /* ViewModel */,
+				5B62FA7E237CD61600F980ED /* Other */,
 				5B62FA48237CC2D700F980ED /* Assets.xcassets */,
 				5B62FA4D237CC2D700F980ED /* Info.plist */,
-				5B62FA67237CCB6D00F980ED /* Models */,
-				5B62FA70237CCDC200F980ED /* Service */,
 			);
 			path = KittenProject;
 			sourceTree = "<group>";
@@ -143,14 +141,14 @@
 			path = KittenProjectTests;
 			sourceTree = "<group>";
 		};
-		5B62FA67237CCB6D00F980ED /* Models */ = {
+		5B62FA67237CCB6D00F980ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				5B62FA61237CCA0400F980ED /* DataResponse.swift */,
 				5B62FA63237CCAAC00F980ED /* Gallery.swift */,
 				5B62FA65237CCAEB00F980ED /* Image.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5B62FA70237CCDC200F980ED /* Service */ = {
@@ -198,6 +196,32 @@
 				5B62FA74237CCF7E00F980ED /* data.json */,
 			);
 			path = StubData;
+			sourceTree = "<group>";
+		};
+		5B62FA7B237CD5DD00F980ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B62FA7C237CD5E400F980ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B62FA7E237CD61600F980ED /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5B62FA7A237CD46B00F980ED /* StubData */,
+				5B62FA71237CCDE400F980ED /* Network */,
+				5B62FA79237CD45600F980ED /* Delegates */,
+				5B62FA78237CD44300F980ED /* Base Project Files */,
+				5B62FA70237CCDC200F980ED /* Service */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		DA29FFCAA0CAB7B217AE4D61 /* Frameworks */ = {
