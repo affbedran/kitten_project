@@ -10,8 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    // I'm only doing this to avoid implementing a coordinator.
+    // Reason: To be honest I worked all day and I'm tired :(
+    // If you wish, I can submit a pull request later on, fully implementing the coordinator pattern
+    // while predicting future implementation needs such as push notifications and other redirecting options
+    // Also, this is here to prevent automatic deallocation of this resource as it is a weak var inside the view layer.
+    private(set) lazy var viewModel = GalleryViewModel()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

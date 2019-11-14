@@ -14,7 +14,7 @@ final class ImageService: BaseService<ImageProvider> {
     func getCats() -> Single<DataResponse<Gallery>> {
         return provider
             .rx
-            .request(.search(query: "cats"))
+            .request(.search(query: "cat"))
             .filterSuccessfulStatusCodes()
             .map(DataResponse<Gallery>.self)
     }

@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-protocol GalleryViewModelImplementation {
+protocol GalleryViewModelImplementation where Self: AnyObject {
     var imagesSubject: PublishSubject<[Image]> {get}
     var errorSubject: PublishSubject<Error> {get}
     func getCats()

@@ -27,6 +27,9 @@
 		5B62FA77237CD19300F980ED /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62FA76237CD19300F980ED /* ImageService.swift */; };
 		5B62FA80237CD71000F980ED /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62FA7F237CD71000F980ED /* ViewModelProtocols.swift */; };
 		5B62FA82237CD7D000F980ED /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62FA81237CD7D000F980ED /* GalleryViewModel.swift */; };
+		5B62FA85237CE56F00F980ED /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62FA83237CE56F00F980ED /* ImageCell.swift */; };
+		5B62FA86237CE56F00F980ED /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62FA84237CE56F00F980ED /* ImageCell.xib */; };
+		5B62FA88237CE87F00F980ED /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62FA87237CE87F00F980ED /* LoadingIndicator.swift */; };
 		AB0649C2729372D0E0275382 /* Pods_KittenProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2C022B85D22B04826F062A /* Pods_KittenProjectTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		5B62FA76237CD19300F980ED /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		5B62FA7F237CD71000F980ED /* ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
 		5B62FA81237CD7D000F980ED /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		5B62FA83237CE56F00F980ED /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		5B62FA84237CE56F00F980ED /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		5B62FA87237CE87F00F980ED /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		BAE6A62A9BD814DEA75794C3 /* Pods-KittenProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittenProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-KittenProjectTests/Pods-KittenProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C41906CF96E16B8609B3EE73 /* Pods-KittenProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittenProject.release.xcconfig"; path = "Target Support Files/Pods-KittenProject/Pods-KittenProject.release.xcconfig"; sourceTree = "<group>"; };
 		C5FB775D830823AF8C2AA340 /* Pods-KittenProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittenProjectTests.release.xcconfig"; path = "Target Support Files/Pods-KittenProjectTests/Pods-KittenProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +184,6 @@
 		5B62FA78237CD44300F980ED /* Base Project Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B62FA43237CC2D500F980ED /* ViewController.swift */,
 				5B62FA45237CC2D500F980ED /* Main.storyboard */,
 				5B62FA4A237CC2D700F980ED /* LaunchScreen.storyboard */,
 			);
@@ -214,6 +219,10 @@
 		5B62FA7C237CD5E400F980ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B62FA43237CC2D500F980ED /* ViewController.swift */,
+				5B62FA83237CE56F00F980ED /* ImageCell.swift */,
+				5B62FA84237CE56F00F980ED /* ImageCell.xib */,
+				5B62FA87237CE87F00F980ED /* LoadingIndicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 				5B62FA4C237CC2D700F980ED /* LaunchScreen.storyboard in Resources */,
 				5B62FA49237CC2D700F980ED /* Assets.xcassets in Resources */,
 				5B62FA47237CC2D500F980ED /* Main.storyboard in Resources */,
+				5B62FA86237CE56F00F980ED /* ImageCell.xib in Resources */,
 				5B62FA75237CCF7E00F980ED /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +430,10 @@
 				5B62FA6B237CCCAC00F980ED /* NetworkOperationMode.swift in Sources */,
 				5B62FA62237CCA0400F980ED /* DataResponse.swift in Sources */,
 				5B62FA80237CD71000F980ED /* ViewModelProtocols.swift in Sources */,
+				5B62FA88237CE87F00F980ED /* LoadingIndicator.swift in Sources */,
 				5B62FA42237CC2D500F980ED /* SceneDelegate.swift in Sources */,
 				5B62FA6F237CCD7A00F980ED /* ProjectUtil.swift in Sources */,
+				5B62FA85237CE56F00F980ED /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +597,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8PJPBXRKP;
 				INFOPLIST_FILE = KittenProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +617,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8PJPBXRKP;
 				INFOPLIST_FILE = KittenProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
