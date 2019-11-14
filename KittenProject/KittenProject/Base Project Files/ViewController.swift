@@ -11,6 +11,8 @@ import RxSwift
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     private(set) var disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
