@@ -10,5 +10,5 @@ import Foundation
 
 class Image: Codable {
     let type: String?
-    let link: String?
+    let link: String
 }

@@ -8,6 +8,8 @@ target 'KittenProject' do
   # Pods for KittenProject
   pod 'Moya/RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'Kingfisher'
   target 'KittenProjectTests' do
     inherit! :search_paths
     # Pods for testing
